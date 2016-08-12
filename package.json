@@ -1,0 +1,36 @@
+{
+  "name": "reef-pulse-emitter",
+  "version": "1.0.0-beta.1",
+  "description": "A client lib to emmit reef-pulse events to the sink",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib --copy-files",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/line64/node-reef-pulse-emitter.git"
+  },
+  "keywords": [
+    "reef",
+    "pulse",
+    "metrics"
+  ],
+  "author": "Line64",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/line64/node-reef-pulse-emitter/issues"
+  },
+  "homepage": "https://github.com/line64/node-reef-pulse-emitter#readme",
+  "peerDependencies": {
+    "reef-client": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "dotenv": "^2.0.0",
+    "reef-client": "^1.0.0-beta.5"
+  }
+}
