@@ -1,9 +1,12 @@
+import moment from 'moment';
 
-export default function(emitter, category, description) {
+export default function(emitter, stream, type, data) {
 
   emitter.eventBuffer.push({
-    category,
-    description
+    stream,
+    type,
+    data,
+    ocurredTs: +moment.format('x')
   });
 
 };

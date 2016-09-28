@@ -11,7 +11,7 @@ export default function(options) {
     eventBuffer: []
   };
 
-  emitter.emit = (category, description) => emitEvent(emitter, category, description);
+  emitter.emit = (stream, type, data) => emitEvent(emitter, stream, type, data);
 
   return emitter;
 
