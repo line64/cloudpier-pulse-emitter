@@ -1,5 +1,3 @@
-import moment from 'moment';
-
 const PULSE_DOMAIN = 'reef-pulse';
 const DIGEST_COMMAND = 'DIGEST_EVENTS'
 
@@ -13,7 +11,7 @@ export default function (emitter) {
 
   reefClient.fireAndForget(PULSE_DOMAIN, pulseLane, DIGEST_COMMAND, {
     emitterDomain: emitterDomain,
-    flushTs: +moment.format('x'),
+    flushTs: new Date().getTime(),
     events: eventSlice
   });
 

@@ -1,4 +1,3 @@
-import moment from 'moment';
 
 export default function(emitter, stream, type, data) {
 
@@ -6,7 +5,7 @@ export default function(emitter, stream, type, data) {
     stream,
     type,
     data,
-    ocurredTs: +moment.format('x')
+    ocurredTs: new Date().getTime()
   });
 
 };

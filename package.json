@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/line64/node-reef-pulse-emitter#readme",
   "peerDependencies": {
-    "reef-client": "*",
-    "moment": "^2.15.1"
+    "reef-client": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
