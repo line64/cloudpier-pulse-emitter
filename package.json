@@ -1,6 +1,6 @@
 {
   "name": "reef-pulse-emitter",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "A client lib to emmit reef-pulse events to the sink",
   "main": "lib/index.js",
   "scripts": {
