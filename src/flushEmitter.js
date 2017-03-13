@@ -1,4 +1,4 @@
-const PULSE_DOMAIN = 'reef-pulse';
+const PULSE_DOMAIN = 'cloudpier-pulse-sink';
 const DIGEST_COMMAND = 'DIGEST_EVENTS'
 
 export default function (emitter) {

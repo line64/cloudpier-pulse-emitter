@@ -1,7 +1,7 @@
 {
-  "name": "reef-pulse-emitter",
+  "name": "cloudpier-pulse-emitter",
   "version": "1.0.0",
-  "description": "A client lib to emmit reef-pulse events to the sink",
+  "description": "A client lib to emmit cloudpier-pulse events to the sink",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel ./src --out-dir ./lib --copy-files",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/line64/node-reef-pulse-emitter.git"
+    "url": "git+https://github.com/line64/cloudpier-pulse-emitter.git"
   },
   "keywords": [
-    "reef",
+    "cloudpier",
     "pulse",
     "metrics"
   ],
   "author": "Line64",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/line64/node-reef-pulse-emitter/issues"
+    "url": "https://github.com/line64/cloudpier-pulse-emitter/issues"
   },
-  "homepage": "https://github.com/line64/node-reef-pulse-emitter#readme",
+  "homepage": "https://github.com/line64/cloudpier-pulse-emitter#readme",
   "peerDependencies": {
     "reef-client": "*"
   },
@@ -31,6 +31,6 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-stage-0": "^6.5.0",
     "dotenv": "^2.0.0",
-    "reef-client": "^1.0.0-beta.5"
+    "reef-client": "^1.0.0-beta.6"
   }
 }

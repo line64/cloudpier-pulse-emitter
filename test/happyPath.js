@@ -7,7 +7,7 @@ var brokerFacade = new reef.SqsBrokerFacade({
   region: process.env.AWS_REGION,
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  clientDomain: 'reef-pulse-tester',
+  clientDomain: 'cloudpier-pulse-tester',
   clientLane: 'instance001'
 });
 
@@ -16,7 +16,7 @@ var reefClient = new reef.ReefClient(brokerFacade);
 var pulseEmitter = pulse.setupEmitter({
   reefClient: reefClient,
   pulseLane: 'test',
-  emitterDomain: 'reef-pulse-tester'
+  emitterDomain: 'cloudpier-pulse-tester'
 });
 
 console.log(pulseEmitter);
@@ -35,7 +35,7 @@ reefClient
 
       console.log('emitting test event');
 
-      pulseEmitter.emit("HEARTBEAT", "sending heartbeat from test");
+      pulseEmitter.emit("test", "HEARTBEAT", "sending heartbeat from test");
 
     }, 1*1000);
 

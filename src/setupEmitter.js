@@ -6,7 +6,7 @@ export default function(options) {
 
   let emitter = {
     reefClient,
-    pulseLane,
+    pulseLane: pulseLane || 'shared',
     emitterDomain,
     eventBuffer: []
   };
