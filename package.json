@@ -1,6 +1,6 @@
 {
   "name": "cloudpier-pulse-emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A client lib to emmit cloudpier-pulse events to the sink",
   "main": "lib/index.js",
   "scripts": {
