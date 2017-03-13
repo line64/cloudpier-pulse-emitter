@@ -1,4 +1,4 @@
-const PULSE_DOMAIN = 'cloudpier-pulse-sink';
+const PULSE_DOMAIN = 'cloudpier-pulse-sink-v1';
 const DIGEST_COMMAND = 'DIGEST_EVENTS'
 
 export default function (emitter) {
