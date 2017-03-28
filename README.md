@@ -1,30 +1,30 @@
 Cloudpier Pulse Emitter
 =====================================
 
-##Installation
+## Installation
 
 Install with npm: `npm install --save cloudpier-pulse-emitter`.
 
 Or, install with yarn: `yarn add cloudpier-pulse-emitter`.
 
-##Usage
+## Usage
 
-###setupEmitter
+### setupEmitter
 ```
 let emitter = setupEmitter({ reefClient, pulseLane, emmiterDomain })
 ```
 
-###startEmitter
+### startEmitter
 ```
 startEmitter(emitter, interval)
 ```
 
-###emit
+### emit
 ```
 emitter.emit(stream, type, data)
 ```
 
-##Example
+## Example
 ```
 import { setupEmitter, startEmitter } from 'reef-pulse-emitter';
 import { SqsBrokerFacade, ReefClient } from 'reef-client';
